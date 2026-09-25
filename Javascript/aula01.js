@@ -107,11 +107,89 @@ for (let i = 0; i < produtos1.length; i++) {
     console.log(produtos1[i].Nome);
 }
 
+for (let produto of produtos1) {
+    console.log(produto.Nome);
+};
 // 🚀 Agora vem uma mudança importante
 
 //Precisamos de uma forma de repetir uma operação. É aí que entram os loops. 🔄 Primeiro: for 
 
+console.log("\n");
+console.log("\n");
+
+// if e else = Se o carro tiver estoque maior que 0, mostre "Disponível". Caso contrário, mostre "Esgotado".
+
+//if (condição) {
+//    // código executado se for verdadeiro
+//} else {//
+//    // código executado se for falso
+//}//
+
+let old = 18;
+
+if (old >= 17) {
+    console.log("Você é maior de idade");
+}
+
+else{
+    console.log("Você é menor de idade");
+}
+
+for (let produto of produtos1) {
+    if (produto.Estoque > 0) {
+        console.log(produto.Nome + " Disponível");
+    } else {
+        console.log(produto.Nome + " Esgotado");
+    }
+}
+
+console.log("\n");
+console.log("\n");
+
+for (let i = 0; i < produtos1.length; i++) {
+    if (produtos1[i].Estoque > 0) {
+        console.log(produtos1[i].Nome + " Disponível");
+    } else {
+        console.log(produtos1[i].Nome + " Esgotado");
+    }
+}
+
+console.log("\n");
+console.log("\n");
 
 
+for (let produto of produtos1) {
+    if (produto.Estoque > 200) {
+        console.log(produto.Nome + " Disponível");
+    }
 
+    else {
+        console.log(produto.Nome + " Esgotado");
+    }
+}
 
+//else if / Quando temos mais de duas possibilidades:
+
+console.log("\n");
+
+let estoque = 100;
+
+if (estoque === 0) {
+    console.log("Esgotado");
+} else if (estoque < 100) {
+    console.log("Estoque baixo");
+} else {
+    console.log("Estoque normal");
+}
+
+console.log("\n");
+
+for (let i = 0; i < produtos1.length; i++) {
+    if (produtos1[i].Estoque === 0) {
+        console.log(produtos1[i].Nome + " Esgotado");
+    } else if (produtos1[i].Estoque < 200) {
+        console.log(produtos1[i].Nome + " Estoque baixo");
+    } else {
+        console.log(produtos1[i].Nome + " Estoque normal");
+    }
+}
