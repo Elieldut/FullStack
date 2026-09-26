@@ -193,3 +193,61 @@ for (let i = 0; i < produtos1.length; i++) {
         console.log(produtos1[i].Nome + " Estoque normal");
     }
 }
+;
+
+console.log("\n");
+
+// Operadores lógicos
+
+let idade2 = 18;
+let temCarteira = true;
+
+if (idade2 >= 18 && temCarteira === true) {
+    console.log("Pode dirigir");
+}
+
+console.log("\n");
+
+let pagamento = "pix";
+
+if (pagamento === "pix" || pagamento === "cartão") {
+    console.log("Pagamento aceito");
+}
+
+console.log("\n");
+
+let ativo = true;
+
+if (!ativo) {
+    console.log("Usuário inativo");
+}
+
+let modelos = [
+    {
+        nome: "BMW",
+        preco: 240000.00,
+        categoria: "Carro",
+        estoque: 1000
+    },
+
+    {
+        nome: "mclaren",
+        preco: 100000.00,
+        categoria: "Carro",
+        estoque: 500
+    },
+
+    {
+        nome: "bugatti",
+        preco: 100000.00,
+        categoria: "Carro",
+    },
+];
+
+
+
+for (let i = 0; i < modelos.length; i++) {
+    if (modelos[i].estoque > 0 && modelos[i].preco < 250000) {
+        console.log(modelos[i].nome);
+    }
+}
