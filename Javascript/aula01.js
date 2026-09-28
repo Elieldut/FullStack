@@ -241,6 +241,7 @@ let modelos = [
         nome: "bugatti",
         preco: 100000.00,
         categoria: "Carro",
+        estoque: 0
     },
 ];
 
@@ -251,3 +252,62 @@ for (let i = 0; i < modelos.length; i++) {
         console.log(modelos[i].nome);
     }
 }
+
+
+console.log("\n");
+
+// Review 
+
+// Exercício 1
+
+let produtos2 = [
+    {
+        nome: "BMW",   
+        preco: 250000.00,
+        categoria: "Carro",
+        estoque: 1000
+    },  
+
+    {
+        nome: "mclaren",
+        preco: 100000.00,
+        categoria: "Carro",
+        estoque: 500
+    },
+
+    {
+        nome: "bugatti",
+        preco: 100000.00,
+        categoria: "Carro",
+        estoque: 0
+    },
+] ;
+
+
+for (let i = 0; i < produtos2.length; i++) {
+    console.log(produtos2[i].nome);
+}
+
+console.log("\n");
+
+// Exercício 2
+
+for (let i = 0; i < produtos2.length; i++) {
+    if (produtos2[i].estoque > 200) {
+        console.log(produtos2[i].nome + " Disponível");
+    }
+
+}
+
+
+console.log("\n");
+
+// Exercício 3
+
+for (let i = 0; i < produtos2.length; i++) {
+    if (produtos2[i].preco < 250000) {
+        console.log(produtos2[i].nome);
+    }
+}
+
+// Exercício 4
