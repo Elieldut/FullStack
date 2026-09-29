@@ -263,9 +263,9 @@ console.log("\n");
 let produtos2 = [
     {
         nome: "BMW",   
-        preco: 250000.00,
+        preco: 240000.00,
         categoria: "Carro",
-        estoque: 1000
+        estoque: 30
     },  
 
     {
@@ -310,4 +310,23 @@ for (let i = 0; i < produtos2.length; i++) {
     }
 }
 
+console.log("\n");
+
 // Exercício 4
+
+for (let i = 0; i < produtos2.length; i++){
+    if (produtos2[i].estoque > 0 && produtos2[i].preco < 250000) {
+        console.log(produtos2[i].nome);
+        
+    }
+}
+
+console.log("\n");
+
+// Exercício 5
+
+for (let i = 0; i < produtos2.length; i++) {
+    if (produtos2[i].estoque > 500 || produtos2[i].preco < 150000) {
+        console.log(produtos2[i].nome);
+    }
+}
