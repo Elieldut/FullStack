@@ -272,7 +272,7 @@ let produtos2 = [
         nome: "mclaren",
         preco: 100000.00,
         categoria: "Carro",
-        estoque: 500
+        estoque: 0
     },
 
     {
@@ -330,3 +330,14 @@ for (let i = 0; i < produtos2.length; i++) {
         console.log(produtos2[i].nome);
     }
 }
+
+console.log("\n");
+
+// Exercício 6
+
+for (let i = 0; i < produtos2.length; i++) {
+    if (!(produtos2[i].estoque > 0)) {
+        console.log(produtos2[i].nome + " Esgotado");
+    }
+}
+
