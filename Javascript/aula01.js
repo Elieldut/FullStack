@@ -341,3 +341,28 @@ for (let i = 0; i < produtos2.length; i++) {
     }
 }
 
+console.log("\n");
+
+//Studying WHILE now//
+
+for (let i = 0; i < 3; i++) {
+  console.log(i);
+};
+
+console.log("\n");
+
+//let i = 0;
+
+//while (i < 3) {
+//    console.log(i);
+//    i++;
+//};
+
+let i = 1;
+
+while (i <= 5) {
+    console.log(i);
+    i++;
+}   
+
+
