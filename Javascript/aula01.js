@@ -272,7 +272,7 @@ let produtos2 = [
         nome: "mclaren",
         preco: 100000.00,
         categoria: "Carro",
-        estoque: 0
+        estoque: 1
     },
 
     {
@@ -358,10 +358,13 @@ console.log("\n");
 //    i++;
 //};
 
-let i = 1;
+let i = 0;
 
-while (i <= 5) {
-    console.log(i);
+while (i < produtos2.length) {
+    if (produtos2[i].estoque > 0 ) {
+        console.log(produtos2[i].nome + " Disponível");
+    }
+
     i++;
 }   
 
