@@ -358,14 +358,28 @@ console.log("\n");
 //    i++;
 //};
 
+//let i = 0;
+
+//while (i < produtos2.length) {
+    //if (produtos2[i].estoque > 0 ) {
+        //console.log(produtos2[i].nome + " //Disponível");
+    //}
+
+    //i++;
+//}   
+
+
 let i = 0;
 
-while (i < produtos2.length) {
-    if (produtos2[i].estoque > 0 ) {
+while (i < produtos2.length){
+    if(produtos2[i].preco < 200000 && produtos2[i].estoque > 0){
         console.log(produtos2[i].nome + " Disponível");
     }
 
+    else{
+        console.log(produtos2[i].nome + " Esgotado");
+    }
     i++;
-}   
+}
 
 
