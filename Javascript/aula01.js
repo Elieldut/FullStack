@@ -382,4 +382,31 @@ while (i < produtos2.length){
     i++;
 }
 
+console.log("\n");
 
+//Next step: Functions in JavaScript
+
+//function saudacao(){
+//   console.log("welcome");
+//}
+
+//saudacao();
+
+function mostrarProdutos(){
+    for (let i = 0; i < produtos2.length; i++){
+        console.log(produtos2[i].nome);
+    }
+}
+
+mostrarProdutos();
+
+console.log("\n");
+
+function mostrarnome(nome){
+   
+        console.log(nome);
+    
+}
+
+mostrarnome("BMW");
+mostrarnome("mclaren");
