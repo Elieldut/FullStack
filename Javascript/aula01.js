@@ -410,3 +410,37 @@ function mostrarnome(nome){
 
 mostrarnome("BMW");
 mostrarnome("mclaren");
+
+console.log("\n");
+
+function mostrarnome(produto){
+    console.log(produto);
+}
+
+mostrarnome(produtos2[1].nome);
+mostrarnome(produtos2[2].nome);
+
+console.log("\n");
+
+function mostrarprodutos() {
+
+    for (let i = 0; i < produtos2.length; i++) {
+        console.log(produtos2[i].nome);
+        
+    }
+}
+
+mostrarprodutos();
+
+//Aula 01 — Funções: aprendendo return
+//Até agora, você usou console.log() para //mostrar resultados. Mas uma função também //pode devolver um valor usando return.
+
+console.log("\n");
+
+function somar(a, b) {
+    return a + b;
+}
+
+let resultado = somar(10, 20);
+
+console.log(resultado);
