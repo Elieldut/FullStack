@@ -444,3 +444,15 @@ function somar(a, b) {
 let resultado = somar(10, 20);
 
 console.log(resultado);
+
+console.log("\n");
+
+
+function calculoTotal(preco, quantidade) {
+    return preco * quantidade;
+      
+}
+
+let Total = calculoTotal (100, 3);
+
+console.log(Total);
