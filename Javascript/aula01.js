@@ -456,3 +456,38 @@ function calculoTotal(preco, quantidade) {
 let Total = calculoTotal (100, 3);
 
 console.log(Total);
+
+console.log("\n");
+
+function calcularDobro(numero) {
+    return numero * 2;
+}
+
+let resultado1 = calcularDobro(8);
+
+console.log(resultado1);
+
+console.log("\n");
+
+let nome1 = "Eliel";
+
+function mostrarNome() {
+    let idade = 21;
+    console.log(nome1);
+    console.log(idade);
+}
+
+mostrarNome();
+
+console.log("\n");
+
+function calcularPreco(preco) {
+    return preco * 2;
+
+}
+
+let resultado2 = calcularPreco(50);
+
+console.log(resultado2);
+
+
