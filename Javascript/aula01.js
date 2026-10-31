@@ -491,3 +491,13 @@ let resultado2 = calcularPreco(50);
 console.log(resultado2);
 
 
+console.log("\n");
+
+function calcularPreco(preco, quantidade) {
+    let total = preco * quantidade;
+    return total;
+}
+
+let resultado3 = calcularPreco(50, 4 );
+
+console.log(resultado3);
