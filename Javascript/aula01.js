@@ -501,3 +501,22 @@ function calcularPreco(preco, quantidade) {
 let resultado3 = calcularPreco(50, 4 );
 
 console.log(resultado3);
+
+//Próxima etapa: let e const
+
+//Vamos avançar: var
+
+//Existem três formas de declarar variáveis em //JavaScript:
+
+//Declaração	Pode reatribuir?
+
+//var	Sim
+
+//let	Sim
+
+//const	Não
+
+//Guarde isso:
+//- let: respeita o escopo de bloco.
+//- const: também respeita o escopo de bloco.
+//- var: não respeita o escopo de bloco.
